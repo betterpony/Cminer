@@ -1,0 +1,25 @@
+﻿  ecc.c
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(554,42): warning C4244: “=”: 从“uint64_t”转换到“int”，可能丢失数据
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(555,50): warning C4244: “+=”: 从“uint64_t”转换到“int”，可能丢失数据
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(561,43): warning C4244: “+=”: 从“uint64_t”转换到“int”，可能丢失数据
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(562,50): warning C4244: “+=”: 从“uint64_t”转换到“int”，可能丢失数据
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(569,50): warning C4244: “+=”: 从“uint64_t”转换到“int”，可能丢失数据
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(576,50): warning C4244: “+=”: 从“uint64_t”转换到“int”，可能丢失数据
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(583,50): warning C4244: “-=”: 从“uint64_t”转换到“int”，可能丢失数据
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(590,50): warning C4244: “-=”: 从“uint64_t”转换到“int”，可能丢失数据
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(597,50): warning C4244: “-=”: 从“uint64_t”转换到“int”，可能丢失数据
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(604,50): warning C4244: “-=”: 从“uint64_t”转换到“int”，可能丢失数据
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(610,60): warning C4244: “+=”: 从“uint64_t”转换到“int”，可能丢失数据
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(617,60): warning C4244: “-=”: 从“uint64_t”转换到“int”，可能丢失数据
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(1016,39): warning C4244: “=”: 从“const uint64_t”转换到“uint8_t”，可能丢失数据
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(1017,39): warning C4244: “=”: 从“const uint64_t”转换到“uint8_t”，可能丢失数据
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(1018,39): warning C4244: “=”: 从“const uint64_t”转换到“uint8_t”，可能丢失数据
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(1019,39): warning C4244: “=”: 从“const uint64_t”转换到“uint8_t”，可能丢失数据
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(1020,39): warning C4244: “=”: 从“const uint64_t”转换到“uint8_t”，可能丢失数据
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(1021,38): warning C4244: “=”: 从“const uint64_t”转换到“uint8_t”，可能丢失数据
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(1022,33): warning C4244: “=”: 从“const uint64_t”转换到“uint8_t”，可能丢失数据
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(1087,20): warning C4477: “printf”: 格式字符串“%lx”需要类型“unsigned long”的参数，但可变参数 1 拥有了类型“uint64_t”
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(1087,20): message : 请考虑在格式字符串中使用“%llx”
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(1087,20): message : 请考虑在格式字符串中使用“%Ix”
+D:\bitpony\code\VS2019\Cminer\src\secp256k1\ecc.c(1087,20): message : 请考虑在格式字符串中使用“%I64x”
+  Cminer.vcxproj -> D:\bitpony\code\VS2019\Cminer\x64\Debug\Cminer.exe
