@@ -7,57 +7,50 @@
 
 int main()
 {
-	//int i = 0;
-	//while (true)
-	//{
-	//	i++;
+    //int i = 0;
+    //while (true)
+    //{
+    //	i++;
 
 
-	//	printf("hello world ....0x%x\n",i);
-	//	sleep(100);
-	//}
+    //	printf("hello world ....0x%x\n",i);
+    //	sleep(100);
+    //}
 
-    uint8_t public_key[ECC_BYTES * 2];
-    uint8_t private_key[ECC_BYTES];
-    uint8_t hash[ECC_BYTES] = { 0x2 };
-    uint8_t signature[ECC_BYTES * 2];
-    int ret = 0;
-    uint32_t i = 0;
+    //uint8_t public_key[ECC_BYTES * 2];
+    //uint8_t private_key[ECC_BYTES];
+    //uint8_t hash[ECC_BYTES] = { 0x2 };
+    //uint8_t signature[ECC_BYTES * 2];
+    //int ret = 0;
+    //uint32_t i = 0;
 
-    ret = ecc_make_key(public_key, private_key);
-    if (ret == 0) {
-        printf("ecc_make_key failure\n");
+    //ret = ecc_make_key(public_key, private_key);
+    //if (ret == 0) {
+    //    printf("ecc_make_key failure\n");
+    //}
+
+    uint64_t res[4];
+    uint64_t tttt[8] = { 
+        0x1111111111111111, 0x2FFFFFFFFFFF5aaa, 0x1f678f3bc76af292, 0x45321123312cbda3,
+           0x4589654552145668, 0x2234adbce334554c, 0x1f678f4dfff1fadc, 0x453211233bbce123
+    };
+    uint64_t product[8];
+    for (int i = 0; i < 8; i++)
+    {
+        product[i] = tttt[7 - i];
     }
 
-    printf("##############public key###############\n0x");
-    for (i = 0; i < ECC_BYTES * 2; i++) {
-        printf("%02x", public_key[i]);
-    }
+    vli_mmod_fast(res,product);
 
+    printf("0x");
+    for (int i = 0; i < 4; i++)
+    {
+        printf("%llx ", res[3 - i]);
+    }
     printf("\n");
-    printf("##############private key###############\n0x");
-    for (i = 0; i < ECC_BYTES; i++) {
-        printf("%02x",private_key[i]);
-    }
-    printf("\n");
+  
 
-    ret = ecdsa_sign(private_key, hash, signature);
-    if (ret == 0) {
-        printf("ecdsa_sign failure\n");
-    }
-    
-    //    hash[0] = 0x3;
-    ret = ecdsa_verify(public_key, hash, signature);
-    if (ret == 1) {
-        printf("verify passed\n");
-    }
-    else {
-        printf("verify failed\n");
-    }
-
-    return 0;
-
-	system("pause");
+	//system("pause");
 }
 
 

@@ -538,7 +538,7 @@ static void vli_mmod_fast(uint64_t *p_result, uint64_t *p_product)
 
 /* Computes p_result = p_product % curve_p
    from http://www.nsa.gov/ia/_files/nist-routines.pdf */
-static void vli_mmod_fast(uint64_t *p_result, uint64_t *p_product)
+void vli_mmod_fast(uint64_t *p_result, uint64_t *p_product)
 {
     uint64_t l_tmp[NUM_ECC_DIGITS];
     int l_carry;
@@ -612,7 +612,8 @@ static void vli_mmod_fast(uint64_t *p_result, uint64_t *p_product)
     }
     else
     {
-        while(l_carry || vli_cmp(curve_p, p_result) != 1)
+        int r = vli_cmp(curve_p, p_result);
+        while(l_carry || (vli_cmp(curve_p, p_result) != 1))
         {
             l_carry -= vli_sub(p_result, p_result, curve_p);
         }
