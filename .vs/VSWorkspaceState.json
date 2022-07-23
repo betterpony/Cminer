@@ -1,0 +1,9 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\secp256k1"
+  ],
+  "SelectedNode": "\\src\\secp256k1\\ecc.c",
+  "PreviewInSolutionExplorer": false
+}

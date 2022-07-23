@@ -707,7 +707,7 @@ static void vli_modSquare_fast(uint64_t *p_result, uint64_t *p_left)
 /* Computes p_result = (1 / p_input) % p_mod. All VLIs are the same size.
    See "From Euclid's GCD to Montgomery Multiplication to the Great Divide"
    https://labs.oracle.com/techrep/2001/smli_tr-2001-95.pdf */
-static void vli_modInv(uint64_t *p_result, uint64_t *p_input, uint64_t *p_mod)
+ void vli_modInv(uint64_t *p_result, uint64_t *p_input, uint64_t *p_mod)
 {
     uint64_t a[NUM_ECC_DIGITS], b[NUM_ECC_DIGITS], u[NUM_ECC_DIGITS], v[NUM_ECC_DIGITS];
     uint64_t l_carry;
